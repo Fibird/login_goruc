@@ -70,3 +70,12 @@ python setup.py install
 python login_goruc.py
 ```
 
+## docker环境使用
+
+如果你的电脑已经安装了docker运行环境，那么不必安装前面的依赖环境即可使用：
+
+```
+docker run -it --net=host fibird/login_goruc
+```
+
+该镜像目前只支持firefox类型，因此在运行时第一步选择firefox类型。
