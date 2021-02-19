@@ -1,11 +1,10 @@
 # 概述
 
-通过控制台登录go.ruc认证连接外网。
-
-假期在家通过vpn连接实验室的电脑（Linux），虽然可以连接上，但是由于时间原因，go.ruc自动下线，导致电脑无法连接外网。而go.ruc目前只能通过浏览器认证登录，因此萌发了通过terminal登录go.ruc的想法，这也是编写这个脚本的目的。
+通过控制台登录go.ruc认证连接外网。目前人大的同学们只能通过浏览器来登录校园网，对于使用linux的同学们来说（不使用图形界面）是非常不方便的。于是，我开发了这款程序方便人大学子登录人大校园网。目前该程序支持docker环境，使用docker的同学们可以很容易地运行该程序。这里也推荐使用docker运行，避免安装依赖环境。
 
 # 环境准备
 
+强烈推荐使用docker运行该程序，直接跳转[这里](#docker环境使用)。
 
 ## 浏览器
 
@@ -61,6 +60,27 @@ pip install selenium
 ```
 python setup.py install
 ```
+
+## docker环境
+
+如果你不想安装上述的依赖，只需安装docker环境即可：
+
+- centos
+
+```
+sudo yum install docker-ce docker-ce-cli containerd.io
+```
+
+参考这里：https://www.runoob.com/docker/centos-docker-install.html
+
+- ubuntu
+
+```
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
+参考这里：https://www.runoob.com/docker/ubuntu-docker-install.html
 
 # 使用方法
 
