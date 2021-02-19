@@ -30,7 +30,11 @@ def login_by_phantomjs():
     return browser
 
 if __name__ == '__main__':
-    type_id = input('Enter your explorer type id (Firefox: 0, Chrome: 1, PhantomJS: 2, default 0): ')
+    if len(sys.argv) > 0 and sys.argv[1] == 'd':
+        type_id = '0'
+    else:
+        type_id = input('Enter your explorer type id (Firefox: 0, Chrome: 1, PhantomJS: 2, default 0): ')
+
     student_id = input('Enter your student id: ')
     student_pwd = getpass.getpass('Enter you password: ')
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf8')

@@ -98,4 +98,3 @@ python login_goruc.py
 docker run -it --net=host fibird/login_goruc
 ```
 
-该镜像目前只支持firefox类型，因此在运行时第一步选择firefox类型。

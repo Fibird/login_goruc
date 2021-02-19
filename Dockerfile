@@ -22,4 +22,4 @@ RUN pip install selenium
 
 ADD login_goruc.py /data
 
-CMD ["python3", "/data/login_goruc.py"]
+CMD ["python3", "/data/login_goruc.py", "d"]
