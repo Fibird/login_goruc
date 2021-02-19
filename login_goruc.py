@@ -1,3 +1,10 @@
+# ==============================================
+# Author: Liu Chaoyang
+# Email: chaoyanglius@outlook.com
+# reference: https://pypi.org/project/selenium/,
+# https://www.geeksforgeeks.org/how-to-install-selenium-in-python/,
+# https://pythonbasics.org/selenium-firefox-headless/
+# ==============================================
 import sys, io
 import getpass
 from selenium import webdriver
