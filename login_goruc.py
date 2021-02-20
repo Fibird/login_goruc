@@ -30,7 +30,7 @@ def login_by_phantomjs():
     return browser
 
 if __name__ == '__main__':
-    if len(sys.argv) > 0 and sys.argv[1] == 'd':
+    if len(sys.argv) > 1 and sys.argv[1] == 'd':
         type_id = '0'
     else:
         type_id = input('Enter your explorer type id (Firefox: 0, Chrome: 1, PhantomJS: 2, default 0): ')
