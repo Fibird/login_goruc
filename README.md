@@ -98,3 +98,8 @@ python login_goruc.py
 docker run -it --net=host fibird/login_goruc
 ```
 
+# TODO
+ - [] 打包成无需安装任何依赖的程序包方便用户使用
+
+
+

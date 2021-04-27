@@ -37,7 +37,7 @@ if __name__ == '__main__':
 
     student_id = input('Enter your student id: ')
     student_pwd = getpass.getpass('Enter you password: ')
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf8')
+    #sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf8')
 
     try:
         if type_id == '1':
@@ -57,6 +57,8 @@ if __name__ == '__main__':
 
         login_button = browser.find_element_by_id('login-account')
         login_button.click()
+        skip_button = browser.find_element_by_id('skip-for-now')
+        skip_button.click()
 
         browser.save_screenshot('web_page.png')
         print("login succeeded, enjoy:)!")
